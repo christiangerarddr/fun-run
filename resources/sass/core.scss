@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Droid Sans", Arial, Sans-Serif;
+}
+
+#upper {
+    background-image: url('../images/background.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#lower {
+    min-height: 100vh;
+    padding-bottom: 10vh;
+    background-color: #0068ac;
+    .my-nav {
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.my-nav {
+    .nav-item {
+        .nav-link {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            color: #0e76bc;
+        }
+        .active {
+            color: #0e76bc !important;
+        }
+    }
+}
+
+#campaign #campaign-banner {
+    width: 50%;
+    #campaign-description {
+        font-size: 15px;
+        font-weight: bold;
+        color: #414042;
+    }
+}
+
+#event #event-banner {
+    width: 60%;
+    #event-details {
+        font-size: 18px;
+        font-weight: bold;
+        color: #414042;
+        margin-bottom: 0px;
+    }
+    #event-registration-fee {
+        font-size: 15px;
+        font-weight: bold;
+        color: #414042;
+    }
+    #event-register-btn {
+        font-size: 18px;
+        font-weight: bold;
+        color: #414042;
+    }
+}
+
+#registration {
+    width: 60%;
+    color: #fff;
+    margin-top: 10vh;
+    #sign-up-header {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    #sign-up-img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #sign-up-instruction {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+    .dropdown-toggle::after {
+        display: inline-block;
+        content: url('../images/dropdown.png');
+        border-top: 0.0em solid;
+        border-right: 0.0em solid transparent;
+        border-bottom: 0;
+        border-left: 0.0em solid transparent;
+    }
+}
+
+$breakpoint-mobile: 410px;
+@media (min-width: $breakpoint-mobile) {
+    .navbar-nav {
+        float: right;
+        text-align: end;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.6em + 0.75rem + 5px);
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #0e76bc;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #0e76bc !important;
+    opacity: 1 !important;
+    font-weight: bold;
+    font-size: 14px;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #0e76bc !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #0e76bc !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn {
+    min-width: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    border-radius: 0rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #39B54C;
+    border-color: #39B54C;
+}
+
+#results-page {
+    color: #414042 !important;
+    th {
+        color: #414042 !important;
+    }
+}
+
+#event-register-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid #39B54A;
+}
+
+#event-register-btn:hover {
+    color: #fff !important;
+}
+
+.text-blue {
+    color: #0e76bc !important;
+}
+
+.filter-table {
+    cursor: pointer;
+}
